@@ -6,11 +6,11 @@ import {
 
 import {getUsers as getUsersApi} from "../../api";
 
-export const getUsers = () => async dispatch => {
+export const getUsers = (page) => async dispatch => {
   dispatch ({type: GET_USERS_REQUEST})
 
   try {
-    const users = await getUsersApi()
+    const users = await getUsersApi(page)
     dispatch({
       type: GET_USERS_SUCCESS,
       payload: users

@@ -1,15 +1,15 @@
-import { GET_USERS_SUCCESS } from "../actions/actionTypes";
+import { GET_QUANTITY_USERS_SUCCESS } from "../actions/actionTypes";
 
 const initialState = {
-  users: [],
+  quantityUsers: null,
 };
 
 export default (state = initialState, { type, payload }) => {
   switch (type) {
-    case GET_USERS_SUCCESS: {
+    case GET_QUANTITY_USERS_SUCCESS: {
       return {
         ...state,
-        users: payload,
+        quantityUsers: payload,
       };
     }
 

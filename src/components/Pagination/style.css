@@ -1,0 +1,32 @@
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  user-select: none;
+}
+
+.button-pagination:hover {
+  border: 1px solid grey;
+  color: grey;
+}
+
+.active {
+  color: black;
+  border: 1px solid black;
+}
+
+.not-active {
+  color: lightgrey;
+  border: 1px solid lightgrey;
+}
